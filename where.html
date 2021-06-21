@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Portal Guns - Where</Title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+            $(document).ready(function(){
+              $(".myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $(".table tr").filter(function() {
+                  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+              });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+             <h1>Portal Guns</h1>
+             <p>An introduction to Portal Guns</p>
+        </div>
+        <div class="navbar">
+            <a href="what.html">What are portal guns?</a>
+            <a href="why.html">Why portal guns?</a>
+            <a href="where.html">Portal near you</a>
+        </div>
+        <br>
+        <h1>Where can you buy Portal and Portal 2?</h1>
+        
+        <div class="content">
+            <div class="text">
+                <p>
+                    One can purchase the games Portal and Portal 2 from many different game stores and websites. 
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d43698.20609044399!2d-73.84693410171514!3d41.0371884009244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgame%20store!5e0!3m2!1sen!2sus!4v1624250320325!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="prices">
+                <p>Search for a specific provider</p>
+                <input class="myInput" type="text" placeholder="Search..">
+                <br><br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Store/Cost</th>
+                            <th>Portal</th>
+                            <th>Portal 2</th>
+                        </tr>
+                    </thead>
+                    <tbody class=table>
+                        <tr>
+                            <td><a href=https://www.gamestop.com/>Gamestop</a></td>
+                            <td>$9.99</td>
+                            <td>$29.99</td>
+                        </tr>
+                        <tr>
+                            <td><a href=https://www.bestbuy.com/>Best Buy</a></td>
+                            <td>$15.99</td>
+                            <td>$19.99</td>
+                        </tr>
+                        <tr>
+                            <td><a href=https://store.steampowered.com/>Steam</a></td>
+                            <td>$9.99</td>
+                            <td>$9.99</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

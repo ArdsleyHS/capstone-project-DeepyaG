@@ -1,0 +1,92 @@
+.header {
+    padding: 20px;
+    text-align: center;
+    background: #e8d1a0;
+    color: white;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+.header p {
+    font-size: 20px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #293b59;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #c3d1e8;
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #ebf2f2;
+}
+
+h1 {
+    padding: 0px 30px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+}
+
+.text {
+    flex: 60%;
+    padding: 0px 50px;
+}
+
+.text li {
+    font-size: 17px;
+}
+
+.image {
+    flex: 40%;
+    float: left;
+    text-align: center;
+}
+
+.image p {
+    font-size: 15px;
+    color: #797d7d;
+}
+
+th {
+    padding: 20px 50px;
+    font-size: 25px;
+}
+
+td {
+    padding: 10px;
+}
+
+table,
+th,
+td {
+    border: 3px solid #05091f;
+    border-collapse: collapse;
+}
+
+.prices {
+    flex: 40%;
+    float: left;
+}
